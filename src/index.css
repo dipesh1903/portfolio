@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Acorn';
+  src: url("./assets/fonts/Acorn-Regular.ttf") format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  height: 100%
+}
