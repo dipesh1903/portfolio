@@ -120,6 +120,7 @@ function App() {
                   <a target="_blank" href={exp.link || exp.githubLink}><div className="font-semibold text-[20px] flex items-center"><div>{exp.name}</div><img className="size-6 pl-2" src={LinkIcon}/></div></a>
                   <p className="py-2 opacity-80">{exp.description}</p>
                   <div><a target="_blank" href={exp.githubLink} className="underline italics">Source Code</a></div>
+                  {exp.designLink && <div><a target="_blank" href={exp.designLink} className="underline italics">UI/UX Flow</a></div>}
                   <div className="flex text-[12px] flex-wrap my-6 tracking-widest ml-[-4px] mt-2">
                     {
                       exp.techStack.map((item, index) => (

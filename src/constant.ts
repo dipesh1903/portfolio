@@ -69,6 +69,14 @@ export const PROJECTS = [
         description: 'Scan bill to extract the product details',
         techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Tainwindcss', 'firebase', 'google cloud vision']
     },
+    {
+        name: 'Easy Form',
+        link: 'https://form-app-b5280.web.app/details',
+        githubLink: 'https://github.com/dipesh1903/form-app',
+        designLink: 'https://www.figma.com/design/ZkNmayx1dkeFsiNsqI0md8/Form-Screen?t=FJ565xXMu1c16nCT-0',
+        description: 'App to get basic user details with OTP based authentication. Tweak it as per your need from the source code. Added support for i18n',
+        techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Tainwindcss', 'firebase']
+    },
 ]
 
 export const TECH_STACK = [
