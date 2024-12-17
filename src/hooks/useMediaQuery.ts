@@ -8,6 +8,7 @@ export function useMediaQuery(query: string) {
 
     useEffect(() => {
         setMatch(window.matchMedia(query).matches);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dimension])
 
     return match;
