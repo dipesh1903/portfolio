@@ -115,12 +115,12 @@ function App() {
         <div ref={projectsRef} className="lg:my-2 lg:border-[0.5px] lg:border-opacity-20 lg:border-accent-4 lg:rounded-lg bg-opacity-70 w-full first:py-0 text-accent-4">
           {
             PROJECTS.map((exp, index) => (
-              <div key={index} className="cursor-pointer max-sm:p-1 flex px-6 py-6 flex-col lg:flex-row rounded-lg hover:bg-opacity-50 hover:bg-accent-2">
+              <a href={exp.link || exp.githubLink} target="_blank"><div key={index} className="cursor-pointer max-sm:p-1 flex px-6 py-6 flex-col lg:flex-row rounded-lg hover:bg-opacity-50 hover:bg-accent-2">
                 <div className="flex-1">
-                  <a target="_blank" href={exp.link || exp.githubLink}><div className="font-semibold text-[20px] flex items-center"><div>{exp.name}</div><img className="size-6 pl-2" src={LinkIcon}/></div></a>
+                  <a target="_blank" href={exp.link || exp.githubLink}><div className="hover:underline font-semibold text-[20px] flex items-center"><div>{exp.name}</div><img className="size-6 pl-2" src={LinkIcon}/></div></a>
                   <p className="py-2 opacity-80">{exp.description}</p>
-                  <div><a target="_blank" href={exp.githubLink} className="underline italics">Source Code</a></div>
-                  {exp.designLink && <div><a target="_blank" href={exp.designLink} className="underline italics">UI/UX Flow</a></div>}
+                  <div><a target="_blank" href={exp.githubLink} className="underline italics flex items-center"><span>Source Code</span><span><img className="size-5 pl-2" src={LinkIcon}/></span></a></div>
+                  {exp.designLink && <div><a target="_blank" href={exp.designLink} className="underline italics items-center flex"><span>UI/UX Flow</span><span><img className="size-5 pl-2" src={LinkIcon}/></span></a></div>}
                   <div className="flex text-[12px] flex-wrap my-6 tracking-widest ml-[-4px] mt-2">
                     {
                       exp.techStack.map((item, index) => (
@@ -129,7 +129,8 @@ function App() {
                     }
                   </div>
                 </div>
-              </div>
+                </div>
+              </a>
             ))
           }
         </div>
