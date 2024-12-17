@@ -3,6 +3,7 @@ export const EXPERIENCE = [
         duration: 'AUG 2019 - JAN 2020',
         companyName: 'Picktorlabs',
         role: 'Software Engineer',
+        link: 'https://piktorlabs.com/',
         description: 'Worked on the Frontend team for T-Mobile adding new features and building re-usable components',
         techStack: ['Angular(2+)', 'Typescript', 'HTML/CSS']
     },
@@ -10,23 +11,64 @@ export const EXPERIENCE = [
         duration: 'JAN 2020 - MAY 2020',
         companyName: 'ShopX',
         role: 'Software Engineer',
-        description: 'Worked on the Frontend team for T-Mobile adding new features and building re-usable components',
+        link: 'https://shopx.in/',
+        description: `Worked on the in-house B2C grocery shopping application
+(shopX app) during the pandemic. I was responsible for
+building a map to show all the nearby Kirana stores linked
+to our company. Also enhanced the app suggestion page
+and the grocery-shopping experience ow, from add-to-cart
+until checkout`,
         techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Maps API', 'Redux']
     },
     {
         duration: 'MAR 2021 - SEP 2021',
         companyName: 'AccelQ',
         role: 'Software Engineer',
-        description: 'Worked on the Frontend team for T-Mobile adding new features and building re-usable components',
+        link: 'https://www.accelq.com/',
+        description: `Created a React
+Native application for iOS and a native Android app, which
+was used to demo and teach customers and students how to
+use the product for testing apps.`,
         techStack: ['Angular(2+)', 'Typescript', 'HTML/CSS']
     },
     {
         duration: 'JAN 2022 - AUG 2024',
         companyName: 'Workspan',
         role: 'Software Engineer II',
-        description: 'Worked on the Frontend team for T-Mobile adding new features and building re-usable components',
+        link: 'https://www.workspan.com/',
+        description: `Responsible for adding new features and working on
+optimization of the app. Was responsible for guiding the
+juniors, doing sprint planning with the manager, working
+closely with the product and UX team, and CEO to discuss
+solutions, and reviewing the test plans with the QA team for
+a better product delivery. Was involved in the discussions
+for any Frontend features to be delivered by any team, and
+reviewing the design documents and test cases.`,
         techStack: ['Angular(2+)', 'Typescript', 'HTML/CSS', 'Ag-Grid', 'AngularJS', 'CoffeeScript', 'Sendgrid']
     }
+]
+
+export const PROJECTS = [
+    {
+        name: 'Easy Bill',
+        link: 'https://cashbill-easy.web.app/bill',
+        githubLink: 'https://github.com/dipesh1903/bill',
+        description: 'Generate quick bulk Gst cash Bill for your company',
+        techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Tainwindcss', 'firebase']
+    },
+    {
+        name: 'Lifafa',
+        link: 'https://chitthi-a7bcd.web.app',
+        githubLink: 'https://github.com/dipesh1903/lifafa',
+        description: 'One place to save all your favourite links and thoughts. Share the link with the world , or keep it private or collborate with your firends and family',
+        techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Tainwindcss', 'firebase']
+    },
+    {
+        name: 'Bill Scanner',
+        githubLink: 'https://github.com/dipesh1903/bill-scanner',
+        description: 'Scan bill to extract the product details',
+        techStack: ['ReactJs', 'Typescript', 'HTML/CSS', 'Tainwindcss', 'firebase', 'google cloud vision']
+    },
 ]
 
 export const TECH_STACK = [
@@ -37,7 +79,8 @@ export const TECH_STACK = [
     'Javascript',
     'Firebase',
     'Cloud Vision API',
-    'NodeJs'
+    'NodeJs',
+    'TailwindCss'
 ]
 
 export const enum ActiveNav {
